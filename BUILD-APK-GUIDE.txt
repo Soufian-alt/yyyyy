@@ -1,0 +1,17 @@
+MY LIQUID OS - BUILD APK USING GITHUB ACTIONS
+
+1. Create a GitHub account and a NEW repository (choose Public or Private).
+2. Extract this ZIP on your PC.
+3. Upload all files and folders INSIDE the extracted folder to the repository root.
+   Make sure .github/workflows/build-apk.yml is included.
+4. Open the repository's Actions tab.
+5. Select "Build My Liquid OS APK" and click "Run workflow" (or wait for the push build).
+6. Wait for the workflow to finish with a green check mark.
+7. Open the completed workflow run. Under Artifacts, download "My-Liquid-OS-debug-APK".
+8. Extract the downloaded artifact ZIP. It contains the APK.
+9. Transfer the APK to the Samsung phone and install it. This is a debug APK, not a Play Store release.
+
+Notes:
+- GitHub Actions builds the APK in the cloud; no Android Studio is required on your PC.
+- The first build may fail if the project has source/dependency/configuration errors. If so, open the failed run, copy the first meaningful error from the Build debug APK step, and share it for troubleshooting.
+- The APK is signed with a temporary debug key. Rebuilding with a new key can prevent installing over an older build signed with a different key; uninstall the old app first if Android reports a signature conflict.

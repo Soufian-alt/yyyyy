@@ -1,0 +1,6 @@
+{
+  "name": "My Liquid OS",
+  "description": "A lightweight, real Android Home Launcher with a translucent Liquid Glass UI, Control Center, App Drawer, Folders, Dock, and Performance Mode for Android 11+.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
